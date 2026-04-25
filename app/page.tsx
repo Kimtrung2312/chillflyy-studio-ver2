@@ -54,41 +54,72 @@ export default function Home() {
 		<Hero />
    
    {/* Services */}
-      <section id="services" className="py-16 px-6">
-        <h3 className="text-3xl font-bold mb-10 text-center">Dịch vụ</h3>
-        <div className="grid md:grid-cols-4 gap-8">
-          
-          <div className="p-6 bg-gray-900 rounded-2xl">
-            <h4 className="text-xl font-semibold mb-3">Studio</h4>
-            <p className="text-gray-400">
-              Chụp ảnh cá nhân, couple, profile chuyên nghiệp.
-            </p>
-          </div>
+      <section id="services" className="py-20 px-6 bg-[#f6f8f7]">
+  <div className="max-w-6xl mx-auto text-center mb-16">
+    <h3 className="text-4xl font-bold mb-4">
+      Dịch vụ của chúng tôi
+    </h3>
+    <p className="text-white-500">
+      Giải pháp hình ảnh chuyên nghiệp cho mọi nhu cầu của bạn
+    </p>
+  </div>
 
-          <div className="p-6 bg-gray-900 rounded-2xl">
-            <h4 className="text-xl font-semibold mb-3">Phục hồi ảnh</h4>
-            <p className="text-gray-400">
-              Khôi phục ảnh cũ, ảnh mờ, tô màu ảnh.
-            </p>
-          </div>
+  <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    
+    {/* Studio */}
+    <div className="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-100 mb-4">
+        📸
+      </div>
+      <h4 className="text-lg font-semibold mb-2 group-hover:text-green-600 transition">
+        Studio
+      </h4>
+      <p className="text-gray-500 text-sm">
+        Chụp ảnh cá nhân, couple, profile chuyên nghiệp với ánh sáng chuẩn studio.
+      </p>
+    </div>
 
-          <div className="p-6 bg-gray-900 rounded-2xl">
-            <h4 className="text-xl font-semibold mb-3">Thể thao</h4>
-            <p className="text-gray-400">
-              Chụp giải đấu, bắt khoảnh khắc tốc độ cao.
-            </p>
-          </div>
+    {/* Phục hồi ảnh */}
+    <div className="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-100 mb-4">
+        🖼
+      </div>
+      <h4 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition">
+        Phục hồi ảnh
+      </h4>
+      <p className="text-gray-500 text-sm">
+        Khôi phục ảnh cũ, ảnh mờ, rách, nâng cấp chất lượng và tô màu.
+      </p>
+    </div>
 
-          <div className="p-6 bg-pink-900 rounded-2xl border border-pink-500">
-            <h4 className="text-xl font-semibold mb-3">Photobooth</h4>
-            <p className="text-gray-300">
-              Cho thuê photobooth sự kiện, tiệc cưới, sinh nhật. 
-              Concept dễ thương, in ảnh lấy liền.
-            </p>
-          </div>
+    {/* Sự kiện */}
+    <div className="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-yellow-100 mb-4">
+        ⚡
+      </div>
+      <h4 className="text-lg font-semibold mb-2 group-hover:text-yellow-600 transition">
+        Thể thao
+      </h4>
+      <p className="text-gray-500 text-sm">
+        Bắt trọn khoảnh khắc tốc độ cao trong các giải đấu và sự kiện thể thao.
+      </p>
+    </div>
 
-        </div>
-      </section>
+    {/* Photobooth */}
+    <div className="group bg-white p-6 rounded-3xl shadow-sm hover:shadow-xl transition duration-300 hover:-translate-y-2">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-pink-100 mb-4">
+        🎉
+      </div>
+      <h4 className="text-lg font-semibold mb-2 group-hover:text-pink-600 transition">
+        Photobooth
+      </h4>
+      <p className="text-gray-500 text-sm">
+        Cho thuê photobooth sự kiện, concept dễ thương, in ảnh lấy liền.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* Portfolio */}
       <section id="portfolio" className="py-16 px-6 bg-gray-950">

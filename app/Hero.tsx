@@ -5,22 +5,22 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "/hero1.jpg",
+    image: "/hero11.jpg",
     title: "Lưu giữ khoảnh khắc",
     desc: "Chụp ảnh studio chuyên nghiệp, cá nhân, couple.",
   },
   {
-    image: "/hero2.jpg",
+    image: "/hero22.jpg",
     title: "Phục hồi ảnh cũ",
     desc: "Khôi phục ảnh mờ, rách, nâng cấp chất lượng.",
   },
   {
-    image: "/hero3.jpg",
+    image: "/hero33.jpg",
     title: "Photobooth sự kiện",
     desc: "In ảnh lấy liền, concept dễ thương.",
   },
   {
-    image: "/hero4.jpg",
+    image: "/hero44.jpg",
     title: "Chụp ảnh sự kiện",
     desc: "Bắt trọn khoảnh khắc chuyên nghiệp.",
   },
@@ -69,7 +69,7 @@ export default function Hero() {
         ))}
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
 
         {/* Content */}
         <div className="relative z-10 flex flex-col justify-center h-[500px] md:h-[600px] px-8 md:px-16 text-white max-w-2xl">
@@ -102,7 +102,7 @@ export default function Hero() {
         {/* Arrow Left */}
         <button
           onClick={prevSlide}
-          className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/80 px-4 py-2 rounded-full hover:bg-white transition"
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 px-4 py-2 rounded-full hover:bg-white transition"
         >
           ←
         </button>

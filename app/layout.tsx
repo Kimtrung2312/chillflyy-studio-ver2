@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="vi" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen`}>
-        {children}
-      </body>
-    </html>
+    <html lang="vi">
+	<body className={`${inter.className} min-h-screen`}>
+    {children}
+	</body>
+	</html>
   );
 }
