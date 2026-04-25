@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Hero from "app/Hero";
 
 export default function Home() {
   return (
@@ -6,32 +7,48 @@ export default function Home() {
       
       {/* Navbar */}
       <header className="flex justify-between items-center p-6 border-b border-gray-800">
-        <h1 className="text-2xl font-bold">ChillFlyy Studio</h1>
-        <nav className="space-x-6">
-          <a href="#services">Dịch vụ</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#pricing">Bảng giá</a>
-          <a href="#contact">Liên hệ</a>
-        </nav>
-      </header>
+  
+  {/* Logo (click về đầu trang) */}
+  <a
+    href="#"
+    className="px-4 py-2 bg-black text-white font-bold rounded-xl hover:opacity-80 transition"
+  >
+    ChillFlyy Studio
+  </a>
 
-      {/* Hero */}
-      <section className="text-center py-20 px-6">
-        <h2 className="text-4xl md:text-6xl font-bold mb-6">
-          Lưu giữ khoảnh khắc – Nâng tầm hình ảnh
-        </h2>
-        <p className="text-gray-400 mb-8">
-          Studio | Phục hồi ảnh | Thể thao | Photobooth
-        </p>
-        <a
-          href="https://chat.zalo.me/"
-          className="bg-white text-black px-6 py-3 rounded-xl font-semibold"
-        >
-          Đặt lịch ngay
-        </a>
-      </section>
+  {/* Menu */}
+  <nav className="flex gap-4">
+    <a
+      href="#services"
+      className="px-4 py-2 bg-black text-white rounded-xl hover:bg-white hover:text-black transition"
+    >
+      Dịch vụ
+    </a>
 
-      {/* Services */}
+    <a
+      href="#portfolio"
+      className="px-4 py-2 bg-black text-white rounded-xl hover:bg-white hover:text-black transition"
+    >
+      Portfolio
+    </a>
+
+    <a
+      href="#pricing"
+      className="px-4 py-2 bg-black text-white rounded-xl hover:bg-white hover:text-black transition"
+    >
+      Bảng giá
+    </a>
+
+    <a
+      href="#contact"
+      className="px-4 py-2 bg-black text-white rounded-xl hover:bg-white hover:text-black transition"
+    >
+      Liên hệ
+    </a>
+  </nav>
+</header>
+
+           {/* Services */}
       <section id="services" className="py-16 px-6">
         <h3 className="text-3xl font-bold mb-10 text-center">Dịch vụ</h3>
         <div className="grid md:grid-cols-4 gap-8">
