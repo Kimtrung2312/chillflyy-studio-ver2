@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-white text-black min-h-screen">
       
       {/* Navbar */}
       <header className="flex justify-between items-center p-6 border-b border-gray-800">
@@ -24,7 +24,7 @@ export default function Home() {
           Studio | Phục hồi ảnh | Thể thao | Photobooth
         </p>
         <a
-          href="https://zalo.me/"
+          href="https://chat.zalo.me/"
           className="bg-white text-black px-6 py-3 rounded-xl font-semibold"
         >
           Đặt lịch ngay
@@ -106,7 +106,7 @@ export default function Home() {
         <h3 className="text-3xl font-bold mb-6">Liên hệ</h3>
         <p className="text-gray-400 mb-4">Zalo / Facebook / Email</p>
         <a
-          href="https://zalo.me/"
+          href="https://chat.zalo.me/"
           className="bg-white text-black px-6 py-3 rounded-xl"
         >
           Nhắn tin ngay
