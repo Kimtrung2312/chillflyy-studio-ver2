@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "app/Hero";
+import Hero from "./Hero";
 
 export default function Home() {
   return (
@@ -47,8 +47,10 @@ export default function Home() {
     </a>
   </nav>
 </header>
-
-           {/* Services */}
+		{/* Hero */}
+		<Hero />
+   
+   {/* Services */}
       <section id="services" className="py-16 px-6">
         <h3 className="text-3xl font-bold mb-10 text-center">Dịch vụ</h3>
         <div className="grid md:grid-cols-4 gap-8">
