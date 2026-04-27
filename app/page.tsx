@@ -122,49 +122,194 @@ export default function Home() {
 </section>
 
       {/* Portfolio */}
-      <section id="portfolio" className="py-16 px-6 bg-gray-950">
-        <h3 className="text-3xl font-bold mb-10 text-center">Portfolio</h3>
-        <div className="grid md:grid-cols-3 gap-4">
-          <div className="bg-gray-800 h-48 rounded-xl"></div>
-          <div className="bg-gray-800 h-48 rounded-xl"></div>
-          <div className="bg-gray-800 h-48 rounded-xl"></div>
-        </div>
-      </section>
+      <section id="portfolio" className="py-20 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
 
-      {/* Pricing */}
-      <section id="pricing" className="py-16 px-6">
-        <h3 className="text-3xl font-bold mb-10 text-center">Bảng giá</h3>
-        <div className="grid md:grid-cols-3 gap-8">
-          
-          <div className="p-6 bg-gray-900 rounded-2xl text-center">
-            <h4 className="text-xl font-semibold mb-3">Basic</h4>
-            <p className="text-2xl font-bold mb-4">500K</p>
-          </div>
+    <h3 className="text-4xl font-bold text-center mb-12">
+      Dự án nổi bật
+    </h3>
 
-          <div className="p-6 bg-gray-900 rounded-2xl text-center">
-            <h4 className="text-xl font-semibold mb-3">Standard</h4>
-            <p className="text-2xl font-bold mb-4">1.5M</p>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <div className="p-6 bg-gray-900 rounded-2xl text-center">
-            <h4 className="text-xl font-semibold mb-3">Premium</h4>
-            <p className="text-2xl font-bold mb-4">3M</p>
-          </div>
+      {/* Ảnh lớn bên trái */}
+      <div className="md:col-span-2 overflow-hidden rounded-3xl">
+        <img
+          src="/p1.jpg"
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
 
-        </div>
-      </section>
+      {/* Ảnh nhỏ bên phải */}
+      <div className="overflow-hidden rounded-3xl">
+        <img
+          src="/p2.jpg"
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
+
+      {/* Ảnh nhỏ bên trái */}
+      <div className="overflow-hidden rounded-3xl">
+        <img
+          src="/p3.jpg"
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
+
+      {/* Ảnh lớn bên phải */}
+      <div className="md:col-span-2 overflow-hidden rounded-3xl">
+        <img
+          src="/p4.jpg"
+          className="w-full h-full object-cover hover:scale-110 transition duration-500"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      <section id="pricing" className="py-20 px-6 bg-gray-50">
+  <div className="max-w-6xl mx-auto">
+
+    <h3 className="text-4xl font-bold text-center mb-12">
+      Bảng giá
+    </h3>
+
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* Basic */}
+      <div className="bg-white p-8 rounded-3xl shadow-sm text-center transition duration-300 hover:-translate-y-3 hover:shadow-2xl">
+        <h4 className="text-xl font-semibold mb-4">Basic</h4>
+
+        <p className="text-3xl font-bold text-green-600 mb-6">
+          500K
+        </p>
+
+        <ul className="text-gray-500 space-y-2 mb-6">
+          <li>✔ 5 ảnh chỉnh sửa</li>
+          <li>✔ 1 concept</li>
+          <li>✔ 30 phút chụp</li>
+        </ul>
+
+        <a
+          href="https://zalo.me/0901234567"
+          className="block bg-green-600 text-white py-3 rounded-xl hover:bg-green-700 transition"
+        >
+          Đặt lịch
+        </a>
+      </div>
+
+      {/* Standard (highlight) */}
+      <div className="bg-green-600 text-white p-8 rounded-3xl shadow-lg text-center transition duration-300 hover:-translate-y-3 hover:shadow-2xl scale-105">
+        <h4 className="text-xl font-semibold mb-4">Standard</h4>
+
+        <p className="text-3xl font-bold mb-6">
+          1.5M
+        </p>
+
+        <ul className="text-green-100 space-y-2 mb-6">
+          <li>✔ 10 ảnh chỉnh sửa</li>
+          <li>✔ 2 concept</li>
+          <li>✔ 1 giờ chụp</li>
+        </ul>
+
+        <a
+          href="https://zalo.me/0901234567"
+          className="block bg-white text-green-600 py-3 rounded-xl font-semibold hover:scale-105 transition"
+        >
+          Đặt lịch
+        </a>
+      </div>
+
+      {/* Premium */}
+      <div className="bg-white p-8 rounded-3xl shadow-sm text-center transition duration-300 hover:-translate-y-3 hover:shadow-2xl">
+        <h4 className="text-xl font-semibold mb-4">Premium</h4>
+
+        <p className="text-3xl font-bold text-green-600 mb-6">
+          3M
+        </p>
+
+        <ul className="text-gray-500 space-y-2 mb-6">
+          <li>✔ 20 ảnh chỉnh sửa</li>
+          <li>✔ 3 concept</li>
+          <li>✔ 2 giờ chụp</li>
+        </ul>
+
+        <a
+          href="https://zalo.me/0901234567"
+          className="block bg-green-600 text-white py-3 rounded-xl hover:bg-green-700 transition"
+        >
+          Đặt lịch
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Contact */}
-      <section id="contact" className="py-16 px-6 bg-gray-950 text-center">
-        <h3 className="text-3xl font-bold mb-6">Liên hệ</h3>
-        <p className="text-gray-400 mb-4">Zalo / Facebook / Email</p>
-        <a
-          href="https://zalo.me/0932365196"
-          className="bg-white text-black px-6 py-3 rounded-xl"
-        >
-          Nhắn tin ngay
-        </a>
-      </section>
+      <section id="contact" className="py-20 px-6 bg-white">
+  <div className="max-w-5xl mx-auto text-center">
+
+    <h3 className="text-4xl font-bold mb-6">
+      Liên hệ với chúng tôi
+    </h3>
+
+    <p className="text-gray-500 mb-10">
+      Đặt lịch chụp ảnh hoặc thuê photobooth ngay hôm nay
+    </p>
+
+    {/* Box contact */}
+    <div className="grid md:grid-cols-3 gap-6 mb-10">
+
+      {/* Zalo */}
+      <a
+        href="https://zalo.me/0901234567"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-6 bg-gray-50 rounded-2xl hover:shadow-xl transition hover:-translate-y-2"
+      >
+        <div className="text-3xl mb-3">📱</div>
+        <h4 className="font-semibold mb-1">Zalo</h4>
+        <p className="text-gray-500 text-sm">Chat nhanh</p>
+      </a>
+
+      {/* Facebook */}
+      <a
+  href="https://www.facebook.com/hkimtrung01/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="p-6 bg-gray-50 rounded-2xl hover:shadow-xl transition hover:-translate-y-2"
+>
+  <div className="text-3xl mb-3">💬</div>
+  <h4 className="font-semibold mb-1">Facebook</h4>
+  <p className="text-gray-500 text-sm">Inbox fanpage</p>
+</a>
+
+      {/* Email */}
+     <a
+  href="mailto:huynhkimtrung173@gmail.com"
+  className="p-6 bg-gray-50 rounded-2xl hover:shadow-xl transition hover:-translate-y-2"
+>
+  <div className="text-3xl mb-3">✉️</div>
+  <h4 className="font-semibold mb-1">Email</h4>
+  <p className="text-gray-500 text-sm">Gửi mail cho chúng tôi</p>
+</a>
+
+    </div>
+
+    {/* CTA lớn */}
+    <a
+      href="https://zalo.me/0932365196"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-green-600 text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-green-700 transition"
+    >
+      Liên hệ ngay
+    </a>
+
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="text-center py-6 border-t border-gray-800 text-gray-500">
